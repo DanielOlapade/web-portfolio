@@ -1,0 +1,23 @@
+body{
+    background-color: #101112;
+    color: white;
+}
+
+header{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer{
+    font-size: small;
+}
