@@ -7,50 +7,62 @@
     <meta name="author" content="Daniel Olapade">
     <meta name="description" content="">  
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=attach_file" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1bcc378f1.js" crossorigin="anonymous"></script>
 
 <body></body>
     <header id="header">
-            <a href="#About">About</a>
-            <a href="#Projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
             <button id="darkmode">🌙</button>
     </header>
 
     <main id="main"> 
         <section id="about">
-            <p id="intro">Hello, I'm Daniel 
+            <div id="myinfo">
+                <span id="intro"> Hello, I'm Daniel</span>
                 <span id="title">Engineer-in-Training (EIT) · Toronto, ON</span>
-            </p>
-            <p id="abouttext">Recently completed my Bachelor of Science in Biosystems
-                Engineering, focusing on biomaterials engineering, statistical modeling,
-                and systems design. My work includes contributions to a biosensor project
-                to detect bacteria in open wounds before infections develop. I've
-                also gained hands-on experience in R&D, engineering design, and process
-                improvement through internships @ <a href="https://www.agnora.com/" 
-                target="_blank" ref="noopener noreferrer">Agnora Inc.</a> and 
-                <a href="https://www.lindecanada.ca/en-ca"  target="_blank" 
-                ref="noopener noreferrer">Linde Canada.</a> Beyond work, I’m passionate 
-                about traveling, live music, and taking on creativeside projects.
-            </p>
+                <span id="abouttext">
+                    Recently completed my Bachelor of Science in Biosystems
+                    Engineering, with focus on biomaterials engineering, statistical modeling,
+                    and systems design. My work includes contributions to a biosensor project
+                    to detect bacteria in open wounds before infections develop. I've
+                    also gained hands-on experience in R&D, engineering design, and process
+                    improvement through internships @ <a href="https://www.agnora.com/" 
+                    target="_blank" ref="noopener noreferrer">Agnora Inc.</a> and 
+                    <a href="https://www.lindecanada.ca/en-ca"  target="_blank" 
+                    ref="noopener noreferrer">Linde Canada.</a> Beyond work, I'm passionate 
+                    about traveling, live music, and taking on creative side projects.
+                </span>
+            </div>
 
-            <div id="resume">
-                <a href="linktoresume">
-                    <span class="material-symbols-outlined">attach_file</span>
-                </a>
-                <span id="resumeLabel">Resumelabel</span>
+            <div id="socials">
+                <div class="iconset" id="resume">
+                    <a class="icon" href="web-portfolio/Resume Daniel Olapade" target="_blank">
+                        <i class="fa-solid fa-file" style="color:white"></i>
+                    </a>
+                    <span class="iconlabel">Resume</span>
+                </div>
+                <div class="iconset" id="email">
+                    <a class="icon" href="mailto:olapadedaniel99@gmail.com" target="_blank" ref="noopener noreferrer">
+                        <i class="fa-solid fa-envelope" style="color:white;"></i>
+                    </a>
+                    <span class="iconlabel">EmailLabel</span>
+                </div>
+                <div class="iconset" id="linkein">
+                    <a class="icon" href="https://www.linkedin.com/in/danielolapade/" target="_blank" ref="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in" style="color:white;"></i>
+                    </a>
+                    <span class="iconlabel">Linkedinlabel</span>
+                </div>
+                <div class="iconset" id="github">
+                    <a class="icon" href="linktogithub">
+                        <i class="fa-brands fa-github" style="color:white;"></i>
+                    </a>
+                    <span class="iconlabel">Githublabel</span>
+                </div>
             </div>
-            <div id="emial">
-                <a href="linktoemail">Github</a>
-                <span id="emailLabel">Githublabel</span>
-            </div>
-            <div id="linkein">
-                <a href="linktolinkedin">Linkedin</a>
-                <span id="linkeinlabel">Linkedinlabel</span>
-            </div>
-            <div id="github">
-                <a href="linktogithub">Github</a>
-                <span id="githubLabel">Githublabel</span>
-            </div>
+
         </section>
 
         <section id="projects">
