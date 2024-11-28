@@ -22,14 +22,14 @@ a{
     margin-top: 200px;
 }
 #intro{
-    /* display: block; */
-    overflow: hidden;
-    white-space: nowrap;
-    width:0%;
+    display: block;
     font-size: 55px;
     font-weight: 600;
     color: #dedede;
-    animation: fadein 3s ease-in-out 1 normal forwards;}
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadein 3s ease-in-out 1 forwards;
+}
 @keyframes fadein{
     from{
         width:0%;
@@ -45,6 +45,18 @@ a{
     font-weight: 200;
     display: block;
     margin-top: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    animation: glow 2s 2s ease-in-out 1 forwards; 
+}
+@keyframes glow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 #abouttext{
     color: #8a8a8a;
@@ -52,6 +64,16 @@ a{
     font-weight: 200;
     display: block;
     margin-top: 50px;
+    opacity: 0;
+    animation: glow 2s 2s ease-in-out 1 forwards; 
+}
+@keyframes glow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 #socials{
     display: flex;
