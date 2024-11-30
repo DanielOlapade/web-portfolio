@@ -27,7 +27,7 @@ header button{
 }
 #links{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 #links a{
@@ -35,20 +35,16 @@ header button{
     text-decoration: none;
     color: rgb(136, 136, 136);
     cursor: pointer;
-}
-#links #resume{
-    display: flex;
     gap: 5px;
     align-items: center;
 }
 #resume i{
     font-size: 13px;
 }
-.contact{
-    display: flex;
-    font-size: 20px;
+.contact i{
+    font-size: 15px;
 }
-#links #resume:hover, header button:hover, #links .contact:hover{
+#links a:hover, header button:hover{
     color: white;
     transition: 0.2s ease-in-out;
     cursor: pointer;
@@ -125,7 +121,7 @@ header button{
     width: 100%;
     height: 45%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .content:hover{
     transform: scale(1.04);
