@@ -1,82 +1,117 @@
 body{
-    background-color: #101112;
+    background-color: black;
     color: white;
     font-family: "Inter", sans-serif;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     font-weight: 200;
 }
 header{
-    position: fixed;
-    top: 20px;
-    right: 120px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    font-weight: 300;
+    opacity: 0;
+    animation: glow 2s 1s ease-in-out 1 forwards; 
+}
+#resume{
+    font-size: 14px;
+    font-weight: 300;
+}
+header button{
+    all: unset;
+    border: none;
+    background-color: transparent;
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+}
+#links{
+    display: flex;
+    gap: 16px;
+}
+#links a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    align-items: center;
     gap: 5px;
 }
-a{
-    text-decoration: none;
-    color: white;
+#resume i{
+    font-size: 12px;
 }
-.iconset{
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 50px;
-    justify-items: center;
-    gap: 14px
-}
-.icon{
+.contact{
     display: flex;
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    font-size: 22px;
-    width: 100%;
-    height: 100%;
-    color:#3e4040;
-    transition: 0.3s ease-in-out;
+    border-radius: 5px;
 }
-.icon:hover{
-    background-color: #3e4040;
+#links #resume:hover, header button:hover{
     color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+#links .contact:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 #myinfo{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 #intro{
     display: block;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 600;
     color: #dedede;
     overflow: hidden;
     white-space: nowrap;
-    animation: fadein 3s ease-in-out 1 forwards;
+    animation: typing 3s ease-in-out 1 forwards;
 }
 #title{
-    font-size: 16px;
+    color: rgb(215, 215, 215);
+    font-size: 15px;
     font-weight: 200;
     display: block;
     margin-top: 2px;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0;
-    animation: glow 2s 2s ease-in-out 1 forwards; 
+    animation: glow 2s 1s ease-in-out 1 forwards; 
 }
 #abouttext{
-    color: #8a8a8a;
+    margin-top: 50px;
     font-size: 21px;
     font-weight: 200;
-    display: block;
-    margin-top: 50px;
     opacity: 0;
-    animation: glow 2s 2s ease-in-out 1 forwards; 
+    animation: glow 2s 1s ease-in-out 1 forwards; 
+    background: -webkit-linear-gradient(#c9c9c9,rgb(122, 122, 122) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.company{
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.846);
+    text-decoration: none;
+}
+.company:hover{
+    font-weight: 500;
+    text-decoration: none;
+    transition: font-weight 0.3s ease;
+    cursor: pointer;
 }
 #projects{
     margin-top: 150px;
 }
-@keyframes fadein{
+@keyframes typing{
     from{
         width:0%;
         opacity: 0;

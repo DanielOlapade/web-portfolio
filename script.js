@@ -1,0 +1,1 @@
+const resetpage =document.getElementById()
