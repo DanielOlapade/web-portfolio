@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a1bcc378f1.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="portfolio, Daniel Olapade, engineering, projects">
+
 
 </head>
 
 <body>
     <header id="header">
-        <button id="resetpage">DANIEL OLAPADE</button>
+        <button id="resetpage" alt="reload the page">DANIEL OLAPADE</button>
         <div id="links">
             <a id="resume" href="Resume Daniel Olapade.pdf" target="_blank">
                 RESUME<i class="fa-solid fa-up-right-from-square"></i>
@@ -29,6 +31,8 @@
             <a id="github" class="contact" href="https://github.com/danielolapade" target="_blank">
                 GITHUB<i class="fa-brands fa-square-github"></i>
             </a>
+            <input id="theme" type="checkbox">
+            <label id="themepill" for="theme"></label>
         </div>
     </header>
 
@@ -48,23 +52,29 @@
 
         <p id="projectsheader">PROJECTS</P>
         <div id="projects">
-            <div id="project1" class="project" onclick="window.open('STEM-based-Exhibit.html', '_blank')"> 
+            <div id="project1" class="project" onclick="window.open('Algorithmic-Sports-Analysis-System.html', '_blank')"> 
+                <video class="content" src="Algorithmic Sports Analysis System/video1.mp4" muted></video>
+                <span class="contenttxt">Algorithmic Sports Analysis System - In progress</span>
+            </div>
+            <div id="project2" class="project" onclick="window.open('Biosensor-Project.html', '_blank')"> 
+                <img class="content" src="https://picsum.photos/200/300" muted>
+                <span class="contenttxt">Biosensor Project - 2024</span>
+            </div>
+            <div id="project3" class="project" onclick="window.open('STEM-based-Exhibit.html', '_blank')"> 
                 <video class="content" src="STEM-based Exhibit - 2024\Video1.mp4" muted></video>
                 <span class="contenttxt">STEM-based Exhibit  - 2024</span>
             </div>
-            <div id="project2" class="project" onclick="window.open('Algorithmic-Sports-Analysis-System.html', '_blank')"> 
-                <video class="content" src="Algorithmic Sports Analysis System\Algorithmic Sports Analysis System.mp4" muted></video>
-                <span class="contenttxt">Algorithmic Sports Analysis System - In progress</span>
+            <div id="project4" class="project" onclick="window.open('Agnora-Internship.html','_blank')">
+                <img class="content" src="https://picsum.photos/200/300">
+                <span class="contenttxt">Agnora Engineering Internship - 2022</span>
             </div>
         </div>
     </main>
 
   
     <footer id="footer"> 
-        <div id="copyright">
-            &copy; 2024 Daniel Olapade
-        </div>
-
+        <p>Designed by yours truly using HTML, Old Fashioned CSS, and JavaScript.</p>           
+        <p>&copy; 2024 Daniel Olapade</p> 
     </footer>
 
     <script src="script.js"></script>
