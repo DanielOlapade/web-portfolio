@@ -36,27 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const project1 = document.getElementById("project1")
+const project1 = document.getElementById("project1");
 project1.addEventListener("click", ()=> {
-    window.open('Algorithmic Sports Analysis System\Algorithmic-Sports-Analysis-System.html', '_blank')
+    window.open('Algorithmic Sports Analysis System\Algorithmic-Sports-Analysis-System.html', '_blank');
 });
-const project2 = document.getElementById("project2")
+const project2 = document.getElementById("project2");
 project2.addEventListener("click", ()=> {
-    window.open('Biosensor Project\Biosensor-Project.html', '_blank')
+    window.open('Biosensor Project\Biosensor-Project.html', '_blank');
 });
-const project3 = document.getElementById("project3")
+const project3 = document.getElementById("project3");
 project3.addEventListener("click", ()=> {
-    window.open('STEM-based Exhibit - 2024\STEM-based-Exhibit.html', '_blank')
+    window.open('STEM-based Exhibit - 2024\STEM-based-Exhibit.html', '_blank');
 });
-const project4 = document.getElementById("project4")
-project4.addEventListener("click", ()=> {
-    window.open('Agnora-Internship\Agnora-Internship.html','_blank')
-});
-
 
 const backup = document.getElementById("backup");
 backup.addEventListener("click", () => {
-    window.scroll({top: 0, behavior: "smooth"})
+    window.scroll({top: 0, behavior: "smooth"});
 });
 
 
