@@ -8,7 +8,6 @@ for (let i=0; i < content.length; i++){
     if (content[i].tagName === "VIDEO"){
         content[i].addEventListener("mouseover", ()=>{
             content[i].play();
-            content[i].loop();
         });
         content[i].addEventListener("mouseleave", ()=>{
             content[i].pause();
@@ -54,6 +53,27 @@ backup.addEventListener("click", () => {
     window.scroll({top: 0, behavior: "smooth"});
 });
 
-
-
-
+const myname = document.getElementById("myname");
+myname.addEventListener("click", () => {
+      const end = Date.now() + 1 * 1000;
+      const colors = ["#bb0000", "#ffffff"];
+      (function frame() {
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 30,
+          origin: { x: 0 },
+          colors: colors,
+        });
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 30,
+          origin: { x: 1 },
+          colors: colors,
+        });
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+});

@@ -1,13 +1,13 @@
 :root{
-    --dark: black;
-    --light: white;
-    --mid: rgb(136, 136, 136);
-    --topgrad:#dbdbdb;
-    --lowgrad:rgb(88, 88, 88) ;
+    --dark: #19191a;
+    --light: #b0b0b0;
+    --mid: #a5a4a8;
+    --topgrad:#b0b0b0;
+    --lowgrad:#3d3d3d;
 
 }
 body.lightmode{
-    --dark: white;
+    --dark: #e9ecef;
     --light: black;
     --mid: rgb(136, 136, 136);
     --topgrad:rgb(88, 88, 88) ;
@@ -20,9 +20,9 @@ body{
     background-color: var(--dark); 
     color: var(--light);
     font-family: "Inter", sans-serif;
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-weight: 200;
 }
 header{
@@ -97,6 +97,27 @@ header button{
     white-space: nowrap;
     animation: typing 3s ease-in-out 1 forwards;
 }
+#myname {
+    cursor: pointer;
+}
+#nameclick {
+    opacity: 0;
+    background: none;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 200;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#myname:hover {
+    color: blue;
+    transition: 0.5s ease;
+}
+
+#myname:hover #nameclick {
+    opacity: 1; 
+}
+
 #title{
     color: var(--topgrad);
     font-size: 15px;
@@ -141,10 +162,9 @@ header button{
     margin-top: 15px;
     display: grid;
     justify-content: center;
-    grid-template-columns: 47% 47%;   
-    grid-auto-rows: 400px;
-    column-gap: 50px;
-    row-gap: 70px;
+    grid-template-columns: 33% 33% 33%;   
+    grid-auto-rows: 300px;
+    column-gap: 10px;
     animation: leftslidein 1.5s 1.5s ease-in-out 1 forwards;
 }
 .project{
@@ -184,8 +204,8 @@ header button{
     grid-column: 2;
 }
 #project3{
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 1;
+    grid-column: 3;
 }
 @keyframes typing{
     from{

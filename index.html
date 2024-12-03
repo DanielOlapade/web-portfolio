@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/a1bcc378f1.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="keywords" content="portfolio, Daniel Olapade, engineering, projects">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
 
 
 </head>
@@ -19,7 +21,7 @@
     <header id="header">
         <button id="resetpage">DANIEL OLAPADE</button>
         <div id="links">
-            <a id="resume" href="Resume Daniel Olapade.pdf" target="_blank">
+            <a id="resume" href="Resume_Daniel_Olapade.pdf" target="_blank">
                 RESUME<i class="fa-solid fa-up-right-from-square"></i>
             </a>
             <a id="email" class="contact" href="mailto:olapadedaniel99@gmail.com" target="_blank">
@@ -38,30 +40,35 @@
 
     <main id="main"> 
         <div id="myinfo">
-            <span id="intro">Hi, I'm <span id="name">Daniel</span></span>
+            <span id="intro">
+                Hi, I'm
+                <span id="myname">Daniel
+                    <label for="myname"id="nameclick">Click for fun!</label>
+                </span>
+            </span>
             <span id="title">Engineer-in-Training (EIT) · Toronto, ON</span>
             <span id="abouttext">
                 A recent gradurate in Biosystems Engineering, with focus on biomaterials engineering, statistical modeling, and
-                systems design. My work includes contributions to a biosensor project to detect bacteria in open wounds before
-                infections develop. I've also gained hands-on experience in R&D, engineering design, and process improvement through
-                internships @ <a class="company" href="https://www.agnora.com/" target="_blank">Agnora Inc.</a> and <a class="company" 
-                href="https://www.lindecanada.ca/en-ca"  target="_blank">Linde Canada.</a> Beyond work, I'm passionate about traveling,
-                live music, and taking on creative side projects.
+                systems design. My work includes contributions to a designing an interactive stem exhibit and a biosensor project 
+                to detect bacteria in open wounds before infections develop. I've also gained hands-on experience in R&D, engineering 
+                design, and process improvement through internships @ <a class="company" href="https://www.agnora.com/" target="_blank">
+                Agnora Inc.</a> and <a class="company" href="https://www.lindecanada.ca/en-ca"  target="_blank">Linde Canada.</a> Beyond 
+                work, I'm passionate about traveling, live music, and taking on creative side projects.
             </span>
         </div>
 
         <p id="projectsheader">PROJECTS</P>
         <div id="projects">
             <div id="project1" class="project"> 
-                <video class="content" src="Algorithmic Sports Analysis System/video (1).mp4" loading="lazy" muted></video>
+                <video class="content" src="Algorithmic Sports Analysis System/video (1).mp4" loading="lazy" muted loop></video>
                 <span class="contenttxt">Algorithmic Sports Analysis System - In progress</span>
             </div>
             <div id="project2" class="project"> 
-                <video class="content" src="Biosensor Project\video (1).mp4" loading="lazy"></video>
+                <video class="content" src="Biosensor Project\video (1).mp4" loading="lazy" muted loop></video>
                 <span class="contenttxt">Biosensor Project - 2024</span>
             </div>
             <div id="project3" class="project"> 
-                <video class="content" src="STEM-based Exhibit - 2024\Video (1).mp4" loading="lazy" muted></video>
+                <video class="content" src="STEM-based Exhibit - 2024\Video (1).mp4" loading="lazy" muted loop></video>
                 <span class="contenttxt">STEM-based Exhibit  - 2024</span>
             </div>
         </div>
